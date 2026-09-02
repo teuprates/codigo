@@ -45,13 +45,13 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       // Simulação de envio
-      feedback.textContent = 'Mensagem enviada com sucesso! Entrarei em contato em breve.';
+      feedback.textContent = 'Mensagem enviada com sucesso! Em breve retornaremos.';
       feedback.className = 'form-feedback success';
 
-      // Limpar campos (opcional)
+      // Limpar campos
       form.reset();
 
-      // Limpar feedback após 5 segundos
+      // Limpar feedback após 6 segundos
       setTimeout(() => {
         feedback.textContent = '';
         feedback.className = 'form-feedback';
@@ -59,8 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // ===== SCROLL SUAVE (opcional, já feito com CSS scroll-behavior) =====
-  // ===== DESTAQUE DO LINK ATIVO (opcional) =====
+  // ===== DESTAQUE DO LINK ATIVO =====
   const sections = document.querySelectorAll('section[id]');
   const navAnchors = document.querySelectorAll('.nav-menu a');
 
@@ -77,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
       link.style.color = '#1e293b';
       link.style.fontWeight = '500';
       if (link.getAttribute('href') === `#${current}`) {
-        link.style.color = '#2563eb';
+        link.style.color = '#e11d48';
         link.style.fontWeight = '600';
       }
     });
