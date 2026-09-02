@@ -1,16 +1,315 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-</head>
-    <h1>olá</h1>
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Futebol Nordestino — Portal da Raça</title>
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+  <!-- Font Awesome (ícones) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-    
+  <!-- Cabeçalho / Navegação -->
+  <header>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="#" class="logo">
+          <i class="fas fa-futbol"></i> Futebol Nordestino
+        </a>
+        <ul class="nav-menu">
+          <li><a href="#sobre">A Paixão</a></li>
+          <li><a href="#clubes">Clubes</a></li>
+          <li><a href="#idolos">Ídolos</a></li>
+          <li><a href="#nordestao">Nordestão</a></li>
+          <li><a href="#historia">História</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Seção Hero -->
+  <section class="hero" id="sobre">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="badge">Paixão que vem do Nordeste</span>
+        <h1>Futebol <br />Nordestino</h1>
+        <p class="subtitle">Raça, tradição e talento que conquistaram o Brasil</p>
+        <p class="hero-description">
+          Do Ceará à Bahia, de Pernambuco ao Maranhão: o futebol do Nordeste é
+          sinônimo de garra, história e craques que brilharam no mundo inteiro.
+        </p>
+        <div class="hero-buttons">
+          <a href="#nordestao" class="btn btn-primary">Copa do Nordeste 2026</a>
+          <a href="#idolos" class="btn btn-outline">Conheça os ídolos</a>
+        </div>
+        <div class="hero-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-placeholder">
+          <i class="fas fa-futbol fa-8x"></i>
+          <span>Nordeste é Futebol</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Clubes -->
+  <section class="section" id="clubes">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Gigantes da Região</span>
+        <h2>Os Clubes que Fazem a História</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="cards-grid clubes-grid">
+        <div class="card club-card">
+          <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Bahia</h3>
+          <p class="card-meta">Salvador · BA</p>
+          <p>Campeão brasileiro de 1959 e 1988. Maior campeão da Copa do Nordeste com 5 títulos.[reference:0][reference:1]</p>
+        </div>
+        <div class="card club-card">
+          <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Sport</h3>
+          <p class="card-meta">Recife · PE</p>
+          <p>Campeão brasileiro de 1987 e da Copa do Brasil de 2008. 3 títulos do Nordestão.[reference:2][reference:3]</p>
+        </div>
+        <div class="card club-card">
+          <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Fortaleza</h3>
+          <p class="card-meta">Fortaleza · CE</p>
+          <p>Vice da Sul-Americana 2023. 3 Copas do Nordeste (2019, 2022, 2024).[reference:4][reference:5]</p>
+        </div>
+        <div class="card club-card">
+          <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Ceará</h3>
+          <p class="card-meta">Fortaleza · CE</p>
+          <p>3 títulos da Copa do Nordeste (2015, 2020, 2023) e 47 estaduais.[reference:6][reference:7]</p>
+        </div>
+        <div class="card club-card">
+          <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Vitória</h3>
+          <p class="card-meta">Salvador · BA</p>
+          <p>Pentacampeão do Nordestão em 2026. 4 títulos regionais (1997, 1999, 2003, 2010).[reference:8][reference:9]</p>
+        </div>
+        <div class="card club-card">
+          <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Santa Cruz</h3>
+          <p class="card-meta">Recife · PE</p>
+          <p>Campeão da Copa do Nordeste 2016. 29 títulos pernambucanos. Fundado em 1914.[reference:10][reference:11]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Ídolos -->
+  <section class="section bg-light" id="idolos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Craques da Terra</span>
+        <h2>Ídolos Nordestinos que Brilharam no Mundo</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="idolos-grid">
+        <div class="idolo-card">
+          <div class="idolo-icon"><i class="fas fa-user-circle"></i></div>
+          <h3>Rivaldo</h3>
+          <p class="idolo-meta">Recife · PE</p>
+          <p>Campeão do mundo em 2002, Bola de Ouro da FIFA em 1999. Um dos maiores meias da história.[reference:12]</p>
+        </div>
+        <div class="idolo-card">
+          <div class="idolo-icon"><i class="fas fa-user-circle"></i></div>
+          <h3>Bebeto</h3>
+          <p class="idolo-meta">Salvador · BA</p>
+          <p>Tetracampeão mundial em 1994. Revelado pelo Vitória, ídolo do Flamengo e Deportivo.[reference:13]</p>
+        </div>
+        <div class="idolo-card">
+          <div class="idolo-icon"><i class="fas fa-user-circle"></i></div>
+          <h3>Juninho Pernambucano</h3>
+          <p class="idolo-meta">Recife · PE</p>
+          <p>Mestre das bolas paradas, ídolo do Lyon. Referência mundial em cobranças de falta.[reference:14]</p>
+        </div>
+        <div class="idolo-card">
+          <div class="idolo-icon"><i class="fas fa-user-circle"></i></div>
+          <h3>Hulk</h3>
+          <p class="idolo-meta">Campina Grande · PB</p>
+          <p>Força e potência. Revelado pelo Vitória, campeão da Copa das Confederações 2013.[reference:15]</p>
+        </div>
+        <div class="idolo-card">
+          <div class="idolo-icon"><i class="fas fa-user-circle"></i></div>
+          <h3>Júnior</h3>
+          <p class="idolo-meta">João Pessoa · PB</p>
+          <p>O "Capacete". Ídolo do Flamengo, duas Copas do Mundo (1982 e 1986).[reference:16]</p>
+        </div>
+        <div class="idolo-card">
+          <div class="idolo-icon"><i class="fas fa-user-circle"></i></div>
+          <h3>Sima</h3>
+          <p class="idolo-meta">Miguel Alves · PI</p>
+          <p>Maior goleador do futebol nordestino. Conhecido como "Pelé do Piauí".[reference:17]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Nordestão -->
+  <section class="section" id="nordestao">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Competição Regional</span>
+        <h2>Copa do Nordeste 2026</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="nordestao-content">
+        <div class="nordestao-info">
+          <div class="highlight-box">
+            <span class="badge">🔥 Atualizado</span>
+            <h3>Vitória é pentacampeão!</h3>
+            <p>O Vitória conquistou o pentacampeonato da Copa do Nordeste ao vencer o Fortaleza por 2 a 1 no Barradão, igualando o Bahia como maior campeão da história com 5 títulos.[reference:18]</p>
+          </div>
+          <div class="nordestao-stats">
+            <div class="stat-item">
+              <span class="stat-number">20</span>
+              <span class="stat-label">times participantes</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">25</span>
+              <span class="stat-label">dias de competição</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">9</span>
+              <span class="stat-label">títulos da Bahia</span>
+            </div>
+          </div>
+        </div>
+        <div class="nordestao-lista">
+          <h4>Maiores campeões</h4>
+          <ul class="ranking-lista">
+            <li><span class="pos">1</span> Bahia — 5 títulos</li>
+            <li><span class="pos">2</span> Vitória — 5 títulos</li>
+            <li><span class="pos">3</span> Sport — 3 títulos</li>
+            <li><span class="pos">3</span> Ceará — 3 títulos</li>
+            <li><span class="pos">3</span> Fortaleza — 3 títulos</li>
+          </ul>
+          <p class="ranking-fonte">Fonte: JC/UOL[reference:19]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção História -->
+  <section class="section bg-light" id="historia">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Memória</span>
+        <h2>Momentos que Ficaram na História</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="fas fa-trophy"></i></div>
+          <div class="timeline-content">
+            <h3>1959 — Bahia, o primeiro campeão brasileiro</h3>
+            <p class="timeline-meta">Taça Brasil</p>
+            <p>O Bahia venceu o Santos de Pelé em três jogos e se tornou o primeiro clube nordestino campeão nacional.[reference:20]</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="fas fa-futbol"></i></div>
+          <div class="timeline-content">
+            <h3>1967 — Náutico vice-campeão brasileiro</h3>
+            <p class="timeline-meta">Taça Brasil</p>
+            <p>O Timbu foi vice-campeão brasileiro, perdendo para o Palmeiras no Maracanã. No ano seguinte, foi o primeiro time de PE na Libertadores.[reference:21]</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="fas fa-star"></i></div>
+          <div class="timeline-content">
+            <h3>1987 — Sport campeão brasileiro</h3>
+            <p class="timeline-meta">Campeonato Brasileiro</p>
+            <p>O Sport conquistou o título brasileiro em 1987, um dos maiores orgulhos da torcida rubro-negra.[reference:22]</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="fas fa-globe-americas"></i></div>
+          <div class="timeline-content">
+            <h3>2023 — Fortaleza vice da Sul-Americana</h3>
+            <p class="timeline-meta">Copa Sul-Americana</p>
+            <p>O Fortaleza chegou à final da Sul-Americana, campanha inédita para um clube nordestino.[reference:23]</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Contato -->
+  <section class="section bg-dark" id="contato">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-tag">Fale Conosco</span>
+        <h2>Vamos Trocar Ideias Sobre Futebol?</h2>
+        <div class="divider light"></div>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3>Entre em contato</h3>
+          <p>Compartilhe sua opinião, sugira um tema ou mande aquela história que só o futebol nordestino tem.</p>
+          <ul class="contact-list">
+            <li><i class="fas fa-envelope"></i> contato@futebolnordestino.com</li>
+            <li><i class="fas fa-phone-alt"></i> +55 (81) 99999-0000</li>
+            <li><i class="fas fa-map-marker-alt"></i> Recife, PE · Brasil</li>
+          </ul>
+          <div class="contact-social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-spotify"></i></a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Fale sobre o Nordestão, seu time ou um ídolo..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Enviar mensagem</button>
+          <p id="formFeedback" class="form-feedback"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2026 Futebol Nordestino. Feito com <i class="fas fa-heart"></i> e muita raça.</p>
+      <p class="footer-credit">#NordesteÉFutebol</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript externo -->
+  <script src="script.js"></script>
 </body>
 </html>
